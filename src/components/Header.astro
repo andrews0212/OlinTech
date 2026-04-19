@@ -1,0 +1,19 @@
+---
+console.log('Header component loaded');
+
+// 1. Importamos el componente Image de Astro
+import { Image } from 'astro:assets';
+// 2. Importamos tu archivo de imagen
+import logoOlintech from '../assets/logo.png';
+---
+    <nav class="py-4 px-4 flex space-x-4 items-center justify-between h-16">
+        <Image src={logoOlintech} alt="Logo de Olintech" class="w-12" /> 
+        <div class="flex space-x-4">
+            <a href="/" class="no-underline hover:text-black">Inicio</a>
+            <a href="/about" class="no-underline hover:text-black">Acerca de</a>
+            <a href="/contact" class="no-underline hover:text-black">Nuestras Soluciones</a>
+            <a href="/contact" class="no-underline hover:text-black">Contacto</a>
+        </div>
+       
+    </nav>
+
